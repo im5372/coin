@@ -186,6 +186,7 @@ img.v500-pic{width:102.46%;height:112.77%;left:-2.46%;top:-6.38%}
 .successNext{position:absolute;left:28px;right:28px;bottom:60px;min-height:68px;border:3px solid #c0ffd1;border-radius:34px;background:linear-gradient(#16cd71,#009e4e);box-shadow:0 5px 0 #087d3e,0 0 0 4px #1eab67;font-size:25px;font-weight:900;color:white;cursor:pointer}.successNext span{font-size:32px;margin-right:5px}.successNext:active{transform:translateY(3px);box-shadow:0 2px 0 #087d3e}
 @media(prefers-reduced-motion:reduce){.deliveredProduct,.giftGlow,.successStars span,.spark{animation:none}}
 .preparedSlot{width:49px;height:49px;display:grid;place-items:center;flex-shrink:0}.emptyCoinSlot{width:43px;height:43px;border:2px dashed #d9ab6877;border-radius:50%;background:#49260e33}
+.handCoins.denseCoins .miniCoin.c100{width:31px;height:31px}.handCoins.denseCoins .miniCoin.c500{width:37px;height:37px}
 </style>
 </head>
 <body>
@@ -209,20 +210,191 @@ const students={
  C:{name:'하준',icon:'👦',subtitle:'동전 주고 물건 받기'}
 };
 const data={
- A:[
-  {price:300,item:'🍎',name:'사과',face:'num',prompt:'사과는 300원이에요.'},
-  {price:500,item:'🧸',name:'곰인형',face:'num',prompt:'곰인형은 500원이에요.'},
-  {price:700,item:'🚂',name:'기차',face:'pic',prompt:'이번에는 그림면을 보고 700원을 만들어 보세요.'}
+ "A": [
+  {
+   "price": 300,
+   "item": "🍎",
+   "name": "사과",
+   "face": "num"
+  },
+  {
+   "price": 500,
+   "item": "🧸",
+   "name": "곰인형",
+   "face": "num"
+  },
+  {
+   "price": 700,
+   "item": "🚂",
+   "name": "기차",
+   "face": "pic"
+  },
+  {
+   "price": 200,
+   "item": "✏️",
+   "name": "연필",
+   "face": "num"
+  },
+  {
+   "price": 400,
+   "item": "🤖",
+   "name": "로봇",
+   "face": "num"
+  },
+  {
+   "price": 600,
+   "item": "🍦",
+   "name": "아이스크림",
+   "face": "num"
+  },
+  {
+   "price": 800,
+   "item": "🚗",
+   "name": "자동차",
+   "face": "num"
+  },
+  {
+   "price": 900,
+   "item": "📚",
+   "name": "책",
+   "face": "num"
+  },
+  {
+   "price": 600,
+   "item": "⚽",
+   "name": "축구공",
+   "face": "num"
+  },
+  {
+   "price": 100,
+   "item": "🧃",
+   "name": "주스",
+   "face": "num"
+  }
  ],
- B:[
-  {price:200,item:'🍓',name:'딸기',face:'num',prompt:'딸기는 200원이에요.'},
-  {price:600,item:'🚗',name:'자동차',face:'num',prompt:'자동차는 600원이에요.'},
-  {price:800,item:'🍪',name:'과자',face:'num',prompt:'과자는 800원이에요.'}
+ "B": [
+  {
+   "price": 200,
+   "item": "🍓",
+   "name": "딸기",
+   "face": "num"
+  },
+  {
+   "price": 600,
+   "item": "🚗",
+   "name": "자동차",
+   "face": "num"
+  },
+  {
+   "price": 800,
+   "item": "🍪",
+   "name": "과자",
+   "face": "num"
+  },
+  {
+   "price": 100,
+   "item": "🍌",
+   "name": "바나나",
+   "face": "num"
+  },
+  {
+   "price": 300,
+   "item": "🧃",
+   "name": "주스",
+   "face": "num"
+  },
+  {
+   "price": 500,
+   "item": "🧸",
+   "name": "곰인형",
+   "face": "num"
+  },
+  {
+   "price": 400,
+   "item": "🎈",
+   "name": "풍선",
+   "face": "num"
+  },
+  {
+   "price": 700,
+   "item": "🚌",
+   "name": "버스",
+   "face": "num"
+  },
+  {
+   "price": 900,
+   "item": "🧩",
+   "name": "퍼즐",
+   "face": "num"
+  },
+  {
+   "price": 300,
+   "item": "⚽",
+   "name": "축구공",
+   "face": "num"
+  }
  ],
- C:[
-  {price:100,item:'🍎',name:'사과',face:'num'},
-  {price:200,item:'🧸',name:'곰인형',face:'num'},
-  {price:300,item:'🍌',name:'바나나',face:'num'}
+ "C": [
+  {
+   "price": 100,
+   "item": "🍎",
+   "name": "사과",
+   "face": "num"
+  },
+  {
+   "price": 200,
+   "item": "🧸",
+   "name": "곰인형",
+   "face": "num"
+  },
+  {
+   "price": 300,
+   "item": "🍌",
+   "name": "바나나",
+   "face": "num"
+  },
+  {
+   "price": 100,
+   "item": "🏀",
+   "name": "공",
+   "face": "num"
+  },
+  {
+   "price": 200,
+   "item": "🚗",
+   "name": "자동차",
+   "face": "num"
+  },
+  {
+   "price": 300,
+   "item": "🥛",
+   "name": "우유",
+   "face": "num"
+  },
+  {
+   "price": 400,
+   "item": "🍪",
+   "name": "과자",
+   "face": "num"
+  },
+  {
+   "price": 200,
+   "item": "✏️",
+   "name": "연필",
+   "face": "num"
+  },
+  {
+   "price": 300,
+   "item": "🧃",
+   "name": "주스",
+   "face": "num"
+  },
+  {
+   "price": 500,
+   "item": "🍞",
+   "name": "빵",
+   "face": "num"
+  }
  ]
 };
 
@@ -259,7 +431,7 @@ function studentButton(m){const s=students[m];return `<button class="studentBtn 
 function startGame(m){mode=m;idx=0;selected=[];locked=false;renderGame()}
 function goHome(){cleanupDrag();renderHome()}
 function restart(){idx=0;selected=[];locked=false;renderGame()}
-function nextQuestion(){idx++;selected=[];locked=false;if(idx>=3)renderDone();else renderGame()}
+function nextQuestion(){idx++;selected=[];locked=false;if(idx>=data[mode].length)renderDone();else renderGame()}
 
 function renderGame(){
  cleanupDrag();locked=false;success.classList.add('hidden');
@@ -269,9 +441,9 @@ function renderGame(){
  const isC=mode==='C';
  const speech=isC?`<b>${q.name}</b><br><strong class="price">${q.price}원</strong>이에요.<br><span class="small">준비된 동전을<br>모두 제 손에 주세요!</span>`:`<b>${q.name}</b>는<br><strong class="price">${q.price}원</strong>이에요.<br><span class="small">알맞은 돈을<br>제 손에 올려주세요!</span>`;
  const productPrice=`${q.price}원`;
- const handContent=selected.length?`<div class="handCoins">${selected.map(c=>coinHTML(c.value,face,true,c.id)).join('')}</div>`:`<span class="handHint">여기에 동전 놓기</span>`;
+ const handContent=selected.length?`<div class="handCoins ${selected.length>6?'denseCoins':''}">${selected.map(c=>coinHTML(c.value,face,true,c.id)).join('')}</div>`:`<span class="handHint">여기에 동전 놓기</span>`;
  game.innerHTML=`
- <div class="topbar"><button class="homeBtn" aria-label="친구 선택으로 돌아가기" onclick="goHome()">⌂</button><div class="playerBadge ${mode}">${s.icon} ${s.name} </div><div class="progress">${idx+1} / 3 문제</div></div>
+ <div class="topbar"><button class="homeBtn" aria-label="친구 선택으로 돌아가기" onclick="goHome()">⌂</button><div class="playerBadge ${mode}">${s.icon} ${s.name} </div><div class="progress">${idx+1}/${data[mode].length} 문제</div></div>
  <div class="scene">
    <div class="storeShelf s1"></div><div class="storeShelf s2"></div>
    <div class="storeGoods">🍬 🧃 🍪 🧸 🥫</div><div class="storeGoods g2">🍎 🚗 🍓 🍌 🧃</div>
@@ -297,7 +469,7 @@ function renderGame(){
 
 function renderDone(){
  cleanupDrag();success.classList.add('hidden');home.classList.add('hidden');game.classList.add('hidden');done.classList.remove('hidden');const s=students[mode];
- done.innerHTML=`<div class="doneCard"><div class="doneTrophy">🏆</div><div class="doneTitle">${s.name}, 성공!</div><div class="doneText">가게 미션 3개를 모두 해냈어요.</div><div class="doneButtons"><button style="background:#7fda9b" onclick="restart()">다시 해보기</button><button style="background:#c9b5ff" onclick="goHome()">홈화면 돌아가기</button></div></div>`;
+ done.innerHTML=`<div class="doneCard"><div class="doneTrophy">🏆</div><div class="doneTitle">${s.name}, 성공!</div><div class="doneText">가게 미션 ${data[mode].length}개를 모두 해냈어요.</div><div class="doneButtons"><button style="background:#7fda9b" onclick="restart()">다시 해보기</button><button style="background:#c9b5ff" onclick="goHome()">홈화면 돌아가기</button></div></div>`;
 }
 function clearCoins(){if(locked)return;selected=[];renderGame()}
 
@@ -319,12 +491,12 @@ function renderSuccess(paid){
  const q=data[mode][idx],s=students[mode];
  const itemObject=q.name+((q.name.charCodeAt(q.name.length-1)-0xAC00)%28===0?'를':'을');
  success.style.backgroundImage=`url("${successScenes[mode]}")`;
- success.innerHTML=`<div class="topbar"><button class="homeBtn" aria-label="친구 선택으로 돌아가기" onclick="goHome()">⌂</button><div class="playerBadge ${mode}">${s.icon} ${s.name}</div><div class="progress">${idx+1} / 3 문제</div></div>
+ success.innerHTML=`<div class="topbar"><button class="homeBtn" aria-label="친구 선택으로 돌아가기" onclick="goHome()">⌂</button><div class="playerBadge ${mode}">${s.icon} ${s.name}</div><div class="progress">${idx+1}/${data[mode].length} 문제</div></div>
  <div class="successSpeech" role="status" aria-live="polite"><strong>${s.name}, 잘했어요!</strong><br><span>${paid}원을 주었네요.</span><br><b>${itemObject}</b> 드릴게요!</div>
  <div class="giftGlow" aria-hidden="true"></div><div class="deliveredProduct" role="img" aria-label="${s.name}에게 ${q.name}을 건네주었어요">${q.item}</div>
  <div class="successStars" aria-hidden="true"><span>⭐</span><span>✦</span><span>✨</span><span>★</span></div>
  <div class="successCaption">${s.name}, ${itemObject} 받았어요!</div>
- <button class="successNext" onclick="nextQuestion()"><span aria-hidden="true">➜</span> 다음 문제로 가기</button>`;
+ <button class="successNext" onclick="nextQuestion()"><span aria-hidden="true">➜</span> ${idx===data[mode].length-1?'미션 완료':'다음 문제로 가기'}</button>`;
  confetti();
 }
 
